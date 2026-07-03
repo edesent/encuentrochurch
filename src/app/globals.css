@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-archivo);
+  --font-script: var(--font-caveat);
+
+  /* Encuentro Church brand — navy / green / cream */
+  --color-navy: #12345c;
+  --color-navy-deep: #0b2140;
+  --color-navy-950: #081a33;
+  --color-green: #6aa644;
+  --color-green-dark: #557f34;
+  --color-green-light: #8bc266;
+  --color-cream: #f5f2eb;
+  --color-cream-dark: #ece7dc;
+  --color-ink: #14202e;
+  --color-body: #3d4750;
+  --color-muted: #6c7680;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-body);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-green);
+  color: #fff;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero entrance */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+
+@keyframes scrollBounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(6px); }
+}
+.animate-scroll { animation: scrollBounce 2s ease-in-out infinite; }
+
+/* Thin brand hairline used under section labels */
+.brand-rule {
+  height: 3px;
+  width: 3rem;
+  background: var(--color-green);
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .animate-fade-up { transition: none; animation: none; opacity: 1; transform: none; }
+  html { scroll-behavior: auto; }
+}
