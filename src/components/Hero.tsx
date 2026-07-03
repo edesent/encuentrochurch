@@ -6,31 +6,30 @@ export default function Hero() {
   return (
     <header
       id="inicio"
-      className="relative min-h-[100svh] flex items-center overflow-hidden bg-navy-950"
+      className="relative flex min-h-[100svh] items-center overflow-hidden bg-navy-950"
     >
-      {/* Cinematic background */}
+      {/* Cinematic background — kept subtle so the welcome is the focus */}
       <Image
         src="/images/hero-prayer.jpg"
-        alt="Persona en oración ante la cruz"
+        alt="Adoración en Encuentro Church"
         fill
         preload
         sizes="100vw"
-        className="object-cover object-center opacity-70"
+        className="object-cover object-center opacity-40"
       />
-      {/* Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-deep/80 to-navy-950/70" />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/60" />
-      <div className="absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-green/20 blur-[120px]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-deep/70" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/50" />
+      <div className="absolute -left-32 top-1/4 h-96 w-96 rounded-full bg-green/20 blur-[130px]" />
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-32 pb-24">
-        <div className="max-w-3xl">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-10 px-6 pt-32 pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:pb-28">
+        {/* Left — message */}
+        <div>
           <p className="animate-fade-up delay-100 mb-5 flex items-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.28em] text-green-light">
             <span className="brand-rule" />
             Iglesia Hispana Bilingüe · Houston, TX
           </p>
 
-          <h1 className="animate-fade-up delay-200 font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.03] tracking-tight text-white">
+          <h1 className="animate-fade-up delay-200 font-display text-4xl sm:text-6xl lg:text-[4.2rem] font-extrabold leading-[1.03] tracking-tight text-white">
             Un lugar para encontrar a{" "}
             <span className="text-green-light">Dios</span> y comunidad
           </h1>
@@ -40,7 +39,8 @@ export default function Hero() {
           </p>
 
           <p className="animate-fade-up delay-500 mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-white/80">
-            {SITE.heroSub}
+            Ven tal como eres. En Encuentro no encontrarás extraños, sino una
+            familia de fe donde perteneces — en español y en inglés.
           </p>
 
           {/* Service chip */}
@@ -66,10 +66,36 @@ export default function Hero() {
             </Link>
           </div>
         </div>
+
+        {/* Right — welcome from the pastors */}
+        <div className="animate-fade-up delay-500">
+          <div className="relative mx-auto max-w-md">
+            <span className="absolute -left-3 -top-3 z-20 rounded-full bg-green px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white shadow-lg">
+              ¡Bienvenido!
+            </span>
+            <div className="overflow-hidden rounded-3xl border border-white/15 bg-white/[0.04] shadow-2xl shadow-navy-950/60 backdrop-blur-sm">
+              <div className="relative aspect-[5/4]">
+                <Image
+                  src="/images/pastor-rick-maribel.jpg"
+                  alt="Pastor Rick y Maribel Vasquez"
+                  fill
+                  sizes="(max-width: 1024px) 90vw, 440px"
+                  className="object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/10 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-5">
+                  <p className="font-script text-2xl text-green-light">Te esperamos con los brazos abiertos</p>
+                  <p className="mt-1 font-display text-lg font-bold text-white">Pastor Rick y Maribel</p>
+                  <p className="text-sm text-white/70">Pastores · Encuentro Church</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Scroll cue */}
-      <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2">
+      <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2">
         <Link href="/#pilares" aria-label="Desliza hacia abajo" className="flex flex-col items-center gap-2 text-white/45">
           <span className="text-[10px] uppercase tracking-[0.3em]">Desliza</span>
           <span className="h-4 w-4 rotate-45 border-b-2 border-r-2 border-white/40 animate-scroll" />
