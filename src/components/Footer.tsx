@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { SITE, mapsUrl } from "@/config/site";
+import BrandMark from "./BrandMark";
 
 const footerNav = [
   { href: "/#historia", label: "Nuestra historia" },
@@ -24,13 +24,13 @@ export default function Footer() {
         <div className="grid gap-10 pb-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Image
-              src="/logo.png"
-              alt="El Encuentro Church"
-              width={380}
-              height={91}
-              className="h-11 w-auto"
-            />
+            <div className="flex items-center gap-3">
+              <BrandMark className="h-10 w-10" />
+              <span className="flex flex-col leading-none">
+                <span className="font-display text-lg font-extrabold tracking-[0.14em] text-white">ENCUENTRO</span>
+                <span className="mt-0.5 font-display text-[10px] font-semibold tracking-[0.42em] text-green-light">CHURCH</span>
+              </span>
+            </div>
             <p className="mt-4 font-script text-2xl text-green-light/90">{SITE.script}</p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/55">
               {SITE.tagline}
