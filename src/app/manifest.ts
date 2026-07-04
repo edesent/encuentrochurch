@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: SITE.name,
     short_name: "Encuentro",
     description: SITE.shortDescription,
-    start_url: "/",
+    start_url: "/connect",
     display: "standalone",
     background_color: SITE.backgroundColor,
     theme_color: SITE.themeColor,
