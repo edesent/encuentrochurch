@@ -18,7 +18,7 @@ const resources = [
   {
     title: "Prospecto de Plantación",
     body: "Conoce la visión completa de esta nueva plantación de iglesia bilingüe.",
-    cta: "Descargar PDF",
+    cta: "Descargar el prospecto completo (PDF English)",
     href: SITE.links.prospectus,
   },
   {
