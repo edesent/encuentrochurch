@@ -22,7 +22,7 @@ export default function Story() {
               sizes="(max-width: 1024px) 90vw, 460px"
               className="relative rounded-2xl object-cover shadow-2xl shadow-navy-950/50"
             />
-            <p className="mt-4 text-center text-sm text-white/60">{SITE.pastors}</p>
+            <p className="mt-4 text-center text-sm text-white/60">Pastor Rick Vasquez</p>
           </div>
         </Reveal>
 
