@@ -101,7 +101,7 @@ export default function EspanolPage() {
 
             <Reveal className="mt-12 text-center">
               <a href={SITE.links.prospectus} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-navy px-8 py-4 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-navy-deep">
-                Descargar el prospecto completo (PDF English)
+                Descargar el prospecto completo (PDF)
                 <span aria-hidden>↓</span>
               </a>
             </Reveal>
