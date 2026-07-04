@@ -15,7 +15,7 @@ export default function Story() {
             <div className="absolute -bottom-4 -left-4 h-28 w-28 rounded-tr-3xl border-b-4 border-l-4 border-green/60" />
             <div className="absolute -right-4 -top-4 h-28 w-28 rounded-bl-3xl border-r-4 border-t-4 border-green/60" />
             <Image
-              src="/images/pastor-rick-maribel.jpg"
+              src="/images/img-0071.jpeg"
               alt="Pastor Rick y Maribel Vasquez"
               width={960}
               height={859}
