@@ -53,8 +53,16 @@ export default function Hero() {
           {/* CTAs */}
           <div className="animate-fade-up delay-700 mt-9 flex flex-wrap gap-4">
             <Link
-              href="/#visitanos"
+              href="https://encuentro-connect-flow.base44.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-green px-8 py-4 text-sm font-semibold tracking-wide text-white shadow-lg shadow-green/25 transition-all hover:-translate-y-0.5 hover:bg-green-dark"
+            >
+              Visitante o membresía
+            </Link>
+            <Link
+              href="/#visitanos"
+              className="inline-flex items-center justify-center rounded-full border-2 border-white/40 px-8 py-4 text-sm font-semibold tracking-wide text-white transition-all hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
             >
               Visítanos este domingo
             </Link>
