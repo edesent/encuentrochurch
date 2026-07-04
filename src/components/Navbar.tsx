@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/#inicio", label: "Inicio" },
   { href: "/#historia", label: "Historia" },
   { href: "/#visitanos", label: "Visítanos" },
+  { href: "/connect", label: "Conectar" },
   { href: "/#recursos", label: "Recursos" },
   { href: "/contact-us", label: "Contacto" },
   { href: "/home/espanol", label: "Español" },
