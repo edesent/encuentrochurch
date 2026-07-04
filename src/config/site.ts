@@ -79,6 +79,7 @@ export const SITE = {
 
   // External links (kept identical to the current site)
   links: {
+    connectFlow: "https://encuentro-connect-flow.base44.app/",
     donate: "https://donorbox.org/encuentro-church",
     spiritualGifts: "https://dones-vida-guia.base44.app/",
     parentingClass: "http://spanishparentingclass.org/",
