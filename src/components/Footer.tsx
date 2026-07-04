@@ -5,6 +5,7 @@ import BrandMark from "./BrandMark";
 const footerNav = [
   { href: "/#historia", label: "Nuestra historia" },
   { href: "/#visitanos", label: "Visítanos" },
+  { href: "/connect", label: "Visitante o membresía" },
   { href: "/#recursos", label: "Recursos" },
   { href: "/contact-us", label: "Contacto" },
   { href: "/home/espanol", label: "Español" },
