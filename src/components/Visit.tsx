@@ -47,6 +47,7 @@ export default function Visit() {
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-light">Servicio dominical</p>
                   <p className="mt-1 font-display text-2xl font-bold">{SITE.service.day} · {SITE.service.time}</p>
+                  <p className="mt-1 text-sm text-white/70">Clase de Disipulado 5:00 P.M.</p>
                   <p className="mt-1 text-sm text-white/70">Clase para padres a las {SITE.service.parentClass}</p>
                 </div>
               </div>
