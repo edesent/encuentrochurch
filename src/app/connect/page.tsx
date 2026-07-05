@@ -124,11 +124,29 @@ export default function ConnectPage() {
                     Abrir
                   </a>
                 </div>
-                <iframe
-                  title="Encuentro Connect Flow"
-                  src={SITE.links.connectFlow}
-                  className="h-[720px] w-full bg-white"
-                />
+                <div className="bg-white">
+                  <iframe
+                    title="Encuentro Connect Flow"
+                    src={SITE.links.connectFlow}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allow="clipboard-write; fullscreen"
+                    className="h-[720px] w-full bg-white"
+                  />
+                  <div className="border-t border-navy/10 bg-cream px-5 py-4 text-center">
+                    <p className="text-sm text-body">
+                      Si la aplicación no carga dentro de esta página, ábrela directamente aquí.
+                    </p>
+                    <a
+                      href={SITE.links.connectFlow}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-flex rounded-full bg-green px-6 py-3 text-sm font-semibold text-white transition hover:bg-green-dark"
+                    >
+                      Abrir Encuentro Connect Flow
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
