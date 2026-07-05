@@ -125,17 +125,28 @@ export default function ConnectPage() {
                   </a>
                 </div>
                 <div className="bg-white">
-                  <iframe
-                    title="Encuentro Connect Flow"
-                    src={SITE.links.connectFlow}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    allow="clipboard-write; fullscreen"
-                    className="h-[720px] w-full bg-white"
-                  />
-                  <div className="border-t border-navy/10 bg-cream px-5 py-4 text-center">
+                  <div className="relative overflow-hidden bg-cream">
+                    <img
+                      src="/images/prospecto-5.jpg"
+                      alt="Proceso de conexión y discipulado de Encuentro Church"
+                      className="h-[520px] w-full object-cover object-center opacity-95"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/25 to-transparent" />
+                    <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
+                      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-green-light">
+                        Proceso de conexión
+                      </p>
+                      <h3 className="mt-2 font-display text-2xl font-extrabold sm:text-3xl">
+                        Encuentro → Conectar → Crecer → Servir → Enviar
+                      </h3>
+                      <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/80">
+                        Esta imagen cubre el área donde la app no puede mostrarse dentro del sitio. Los visitantes todavía pueden abrir la aplicación directamente con el botón.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="border-t border-navy/10 bg-cream px-5 py-5 text-center">
                     <p className="text-sm text-body">
-                      Si la aplicación no carga dentro de esta página, ábrela directamente aquí.
+                      Para llenar el formulario y continuar el proceso, abre la aplicación directamente.
                     </p>
                     <a
                       href={SITE.links.connectFlow}
