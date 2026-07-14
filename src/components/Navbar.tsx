@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { SITE } from "@/config/site";
 import BrandMark from "./BrandMark";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const navLinks = [
   { href: "/#inicio", label: "Inicio" },
@@ -13,7 +14,6 @@ const navLinks = [
   { href: "/connect", label: "Conectar" },
   { href: "/#recursos", label: "Recursos" },
   { href: "/contact-us", label: "Contacto" },
-  { href: "/home/espanol", label: "Español" },
 ];
 
 export default function Navbar() {
@@ -54,28 +54,31 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop menu */}
-        <ul className="hidden lg:flex items-center gap-0.5">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="text-white/85 text-[13px] font-medium tracking-wide px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors"
+        <div className="hidden lg:flex items-center gap-2">
+          <LanguageSwitcher />
+          <ul className="flex items-center gap-0.5">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-white/85 text-[13px] font-medium tracking-wide px-3 py-2 rounded-md hover:text-white hover:bg-white/10 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li className="ml-2">
+              <a
+                href={SITE.links.donate}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-green text-white text-[13px] font-semibold tracking-wide px-6 py-2.5 rounded-full hover:bg-green-dark hover:-translate-y-0.5 transition-all shadow-sm"
               >
-                {link.label}
-              </Link>
+                Donar
+              </a>
             </li>
-          ))}
-          <li className="ml-2">
-            <a
-              href={SITE.links.donate}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green text-white text-[13px] font-semibold tracking-wide px-6 py-2.5 rounded-full hover:bg-green-dark hover:-translate-y-0.5 transition-all shadow-sm"
-            >
-              Donar
-            </a>
-          </li>
-        </ul>
+          </ul>
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -96,6 +99,9 @@ export default function Navbar() {
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
+        <div className="mb-5">
+          <LanguageSwitcher mobile />
+        </div>
         <ul className="flex flex-col gap-1">
           {navLinks.map((link) => (
             <li key={link.href}>
