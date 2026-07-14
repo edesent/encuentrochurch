@@ -30,10 +30,7 @@ export default function Hero() {
             Iglesia Hispana Bilingüe · Houston, TX
           </p>
 
-          <h1 className="animate-fade-up delay-200 font-display text-4xl sm:text-6xl lg:text-[4.2rem] font-extrabold leading-[1.03] tracking-tight text-white">
-            Un lugar para encontrar a{" "}
-            <span className="text-green-light">Dios</span> y comunidad
-          </h1>
+          <HeroHeadline />
 
           <p className="animate-fade-up delay-300 mt-3 font-script text-3xl sm:text-4xl text-green-light/90">
             {SITE.script}
