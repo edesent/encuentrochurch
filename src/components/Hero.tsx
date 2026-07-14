@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/config/site";
+import HeroHeadline from "./HeroHeadline";
 
 export default function Hero() {
   return (
