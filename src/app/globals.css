@@ -30,11 +30,28 @@ body {
   background-color: var(--color-cream);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  top: 0 !important;
 }
 
 ::selection {
   background: var(--color-green);
   color: #fff;
+}
+
+/* Keep Google Translate working invisibly behind the custom language button. */
+.goog-te-banner-frame,
+.goog-te-gadget,
+.goog-te-gadget-icon,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 /* Scroll reveal */
