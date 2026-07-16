@@ -112,7 +112,7 @@ export const SITE = {
     },
     {
       key: "pueblo",
-      title: "Un Encuentro con Su Pueblo",
+      title: "An Encounter with His People",
       body: "Una familia de la fe donde nadie camina solo. Hay lugar para ti.",
       icon: "people" as const,
     },
