@@ -49,7 +49,7 @@ export const SITE = {
   ],
 
   story: [
-    "Pastor Rick y Maribel han servido juntos desde el 11 de noviembre de 2011, plantando su primera iglesia —conocida en aquel entonces como Vision City Church, la cual se convirtió en Crosspoint Bellaire Español en 2014. Allí sirvieron juntos durante 10 años, hasta que el pastor Rick fue hospitalizado tras ser diagnosticado con Parkinson e insuficiencia renal, lo que le impidió continuar liderando el campo hispano.",
+    "Pastor Rick y Maribel han servido juntos desde el 11 de noviembre de 2011, plantando su primera iglesia —conocida en aquel entonces como Vision City Church, la cual se convirtió en Crosspoint Bellaire Español en 2014. Allí sirvieron juntos durante 10 años, hasta que el pastor Rick fue hospitalizado tras ser diagnosticado con Parkinson e insuficiencia renal, lo que le impidió continuar liderando el campus hispano.",
     "Tras dos años de cuidados médicos, el pastor Rick y Maribel se sienten lo suficientemente estables para continuar, en obediencia al llamado de Dios para la comunidad bilingüe de Houston, y lanzar una nueva plantación de iglesia: «El Encuentro». Sienten una profunda pasión por las almas y por ver a las familias convertirse en discípulos de Jesucristo, confiando siempre en la gracia del Espíritu Santo para brindar propósito y esperanza.",
     "Es un gozo para ellos invitarles a unirse a esta nueva obra y, juntos, tener un encuentro con Dios y con la comunidad.",
   ],
