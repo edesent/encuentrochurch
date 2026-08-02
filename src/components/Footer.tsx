@@ -80,7 +80,10 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-xs text-white/40 sm:flex-row">
-          <p>© {new Date().getFullYear()} {SITE.name}. Todos los derechos reservados.</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-start">
+            <p>© {new Date().getFullYear()} {SITE.name}. Todos los derechos reservados.</p>
+            <PrivacyPolicyLink />
+          </div>
           <p>
             Hecho con fe por{" "}
             <a href="https://www.elijahdesent.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-green-light">
