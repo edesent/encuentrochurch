@@ -112,7 +112,7 @@ const sections = [
     body: (
       <p>
         Podemos actualizar esta política cuando cambien nuestras prácticas o
-        servicios. La fecha indicada abajo mostrará la revisión más reciente.
+        servicios. La fecha de entrada en vigor indicada al comienzo mostrará la revisión más reciente.
         Los cambios entran en vigor cuando se publican en esta página.
       </p>
     ),
