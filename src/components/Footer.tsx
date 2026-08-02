@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SITE, mapsUrl } from "@/config/site";
 import BrandMark from "./BrandMark";
+import PrivacyPolicyLink from "./PrivacyPolicyLink";
 
 const footerNav = [
   { href: "/#historia", label: "Nuestra historia" },
