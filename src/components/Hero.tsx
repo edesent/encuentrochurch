@@ -80,7 +80,7 @@ export default function Hero() {
             <div className="overflow-hidden rounded-3xl border border-white/15 bg-white/[0.04] shadow-2xl shadow-navy-950/60 backdrop-blur-sm">
               <div className="relative aspect-[5/4]">
                 <Image
-                  src="/images/pastor-rick-maribel.jpg"
+                  src="/images/b1ddff7f-4dbb-4732-9cf7-df164a644d77.png"
                   alt="Pastor Rick y Maribel Vasquez"
                   fill
                   sizes="(max-width: 1024px) 90vw, 440px"
